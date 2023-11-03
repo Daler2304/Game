@@ -118,9 +118,7 @@ int main() {
                     string nick = player.getName();
                     cout << nick;
                     gotoxy(0, 22);
-                    cout<<"                           ";
-                    gotoxy(0, 22);
-                    cout<<"Health: "<<player.getHealth()+" ";
+                    cout<<"Health: "<<player.getHealth()<<" ";
                     Sleep(120);
                     playerY--;
 		            string stop;
@@ -138,9 +136,7 @@ int main() {
                     string nick = player.getName();
                     cout << nick;
                     gotoxy(0, 22);
-                    cout<<"                           ";
-                    gotoxy(0, 22);
-                    cout<<"Health: "<<player.getHealth()+" ";
+                    cout<<"Health: "<<player.getHealth()<<" ";
                     Sleep(70);
                     playerX--;
 		            string stop;
@@ -157,11 +153,8 @@ int main() {
                     gotoxy(playerX, playerY);
                     string nick = player.getName();
                     cout << nick;
-                    
                     gotoxy(0, 22);
-                    cout<<"                           ";
-                    gotoxy(0, 22);
-                    cout<<"Health: "<<player.getHealth()+" ";
+                    cout<<"Health: "<<player.getHealth()<<" ";
                     Sleep(120);
                     playerY++;
 		            string stop;
@@ -179,9 +172,7 @@ int main() {
                     string nick = player.getName();
                     cout << nick;
                     gotoxy(0, 22);
-                    cout<<"                     ";
-                    gotoxy(0, 22);
-                    cout<<"Health: "<<player.getHealth() + " ";
+                    cout<<"Health: "<<player.getHealth()<<" ";
                     Sleep(70);
                     playerX++;
 		            string stop;

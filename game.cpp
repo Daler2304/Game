@@ -1,7 +1,7 @@
 #include "Game.h"
 #include <iostream>
 #include <Windows.h>
-#include <conio.h> // Предполагается, что у вас есть функция gotoxy и другие необходимые вещи
+#include <conio.h>
 
 using namespace std;
 
@@ -83,7 +83,6 @@ void Game::delEnemy(Player& player) {
     while (i < enemies.size()) {
         enemies[i].getLocation(enemyX, enemyY);
 
-        // Check if the enemy has been alive for more than 6 seconds
         if (currentTime - enemyTime[i] > 6) {
             enemies.erase(enemies.begin() + i);
             enemyTime.erase(enemyTime.begin() + i);
@@ -96,7 +95,7 @@ void Game::delEnemy(Player& player) {
                     enemies.erase(enemies.begin() + i);
                     bullets.erase(bullets.begin() + i);
                     enemyTime.erase(enemyTime.begin() + i);
-                    int score = player.getScore() + rand() % 3 + 1;
+                    int score = player.getScore() + 1;
                     player.setScore(score);
                 }
                 else {
@@ -181,11 +180,14 @@ void Game::gameOver(Player& player, bool& start, bool& isGame) {
         switch (c) {
         case 'y':
             start = true;
+            isGame = true;
             playerX = 25;
             playerY = 23;
             player.setLocation(playerX, playerY);
             player.setHealth(3);
             player.setScore(0);
+            gotoxy(52, 1);
+            cout << "Score:                        " << endl;
             break;
 
         case 'n':

@@ -50,7 +50,7 @@
 
   <h2>Авторы</h2>
   <ul>
-    <li>Daler Sirozhidinov</li>
+    <li><a href="https://github.com/Daler2304">Daler Sirozhidinov</a></li>
   </ul>
 
 </body>

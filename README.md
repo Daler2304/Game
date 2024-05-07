@@ -48,7 +48,7 @@
   <h2>Среда разработки</h2>
   <p>Этот проект был разработан с использованием Visual Studio на платформе Windows.</p>
 
-  <h2>Авторы</h2>
+  <h2>Автор</h2>
   <ul>
     <li><a href="https://github.com/Daler2304">Daler Sirozhidinov</a></li>
   </ul>
